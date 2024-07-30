@@ -60,6 +60,7 @@
 #include "critical_section.h"
 
 #include "dw3000.h" //this only for a few constant
+#include "reporter.h"
 #include "translate.h"
 
 #include "deca_interface.h"
@@ -180,6 +181,102 @@ static void mcps_rxerror_cb(const dwt_cb_data_t *rxd)
     }
 }
 
+bool readDW3000CIRData(int32_t *realvalues, int32_t *imgvalues ,int len, int offset) {
+
+ 
+
+    if ((len + offset)>1016)
+        len = 1016-offset;
+    if (len <1) 
+        return false;
+
+    const int bytesPerValue = 6; // dw3000
+
+
+    uint8_t cir_buffer[1016*bytesPerValue+1]; // worst case
+
+    dwt_readaccdata(cir_buffer, len*bytesPerValue+1, offset);
+    int byteAddress = 1;
+    for (int i=0;i<len;i++) {
+        int32_t iValue = cir_buffer[byteAddress++];
+        iValue |= ((int32_t)cir_buffer[byteAddress++]<<8);
+        iValue |= ((int32_t)(cir_buffer[byteAddress++] & 0x03)<<16);
+
+        int32_t qValue = cir_buffer[byteAddress++];
+        qValue |= ((int32_t)cir_buffer[byteAddress++]<<8);         
+        qValue |= ((int32_t)(cir_buffer[byteAddress++] & 0x03)<<16);
+	
+        if (iValue & 0x020000)  // MSB of 18 bit value is 1
+            iValue |= 0xfffc0000;
+        if (qValue & 0x020000)  // MSB of 18 bit value is 1
+            qValue |= 0xfffc0000;
+
+        realvalues[i]=iValue;
+        imgvalues[i]=qValue;
+       // *(CIRValues+i) = sqrt((float)(iValue*iValue+qValue*qValue));
+    }
+    return true;	
+}
+
+
+void printCIR() {
+    int CIR_length = 100; // Number of complex CIR samples we want to read
+   
+    int32_t realSample[CIR_length];
+    int32_t imagSample[CIR_length];
+ 
+    
+
+    //char* CIR_string_real;
+    //char* CIR_string_real_sv;
+    //char* CIR_string_imag_sv;
+    //char* CIR_string_imag;
+    ////char* teststring;
+    //CIR_string_real = (char*)malloc(5000);
+    //CIR_string_imag = (char*)malloc(5000); // Allocate memory for the string buffer
+    //CIR_string_real_sv = (char*)malloc(10);
+    //CIR_string_imag_sv = (char*)malloc(10); // Allocate memory for the string buffer
+
+ 
+    readDW3000CIRData(realSample,imagSample,CIR_length,700);
+  /*  dwt_readaccdata(CIR, 6 * CIR_length + 1, 0);
+    for (int i = 0; i < CIR_length; i++) {
+        CIRsample[0] = CIR[i * 6 + 1]; // Assign each element individually
+        CIRsample[1] = CIR[i * 6 + 2];
+        CIRsample[2] = CIR[i * 6 + 3];
+        realSample[i] = readDW3000CIRData(CIRsample,CIR_length,0);
+        CIRsample[0] = CIR[i * 6 + 4];
+        CIRsample[1] = CIR[i * 6 + 5];
+        CIRsample[2] = CIR[i * 6 + 6];
+        imagSample[i] = readDW3000CIRData(CIRsample,CIR_length,0);
+    }
+*/
+  
+char tmp[16];
+  int len;
+  reporter_instance.print("\nCIR_real_values = [", 20);
+  len = snprintf(tmp,16, "%ld", (realSample[0])); 
+  reporter_instance.print(tmp, len); 
+  for (int i = 1; i < CIR_length; i++) {
+     len = snprintf(tmp,16, " %ld", (realSample[i])); 
+     reporter_instance.print(tmp, len); 
+  }
+  reporter_instance.print("]\n", 2); 
+
+  reporter_instance.print("\nCIR_imag_values = [", 20);
+  len = snprintf(tmp,16, "%ld", (imagSample[0])); 
+  reporter_instance.print(tmp, len); 
+  for (int i = 1; i < CIR_length; i++) {
+     len = snprintf(tmp,16, " %ld", (imagSample[i])); 
+     reporter_instance.print(tmp, len); 
+  }
+  reporter_instance.print("]\n", 2);
+ 
+
+
+}
+
+
 /* @brief     ISR layer
  *             TWR application Rx callback
  *             to be called from dwt_isr() as an Rx call-back
@@ -225,6 +322,7 @@ static void mcps_rx_cb(const dwt_cb_data_t *rxd)
         /*Below Xtal trimming can be executed in the upper layer: rx[idx].cfo*/
         int cfo_ppm = (int)((float)cfo * (CLOCK_OFFSET_PPM_TO_RATIO * 1e6 * 100));
         dw->mcps_runtime->diag.cfo_ppm = cfo_ppm;
+        printCIR();
     }
     else
     {

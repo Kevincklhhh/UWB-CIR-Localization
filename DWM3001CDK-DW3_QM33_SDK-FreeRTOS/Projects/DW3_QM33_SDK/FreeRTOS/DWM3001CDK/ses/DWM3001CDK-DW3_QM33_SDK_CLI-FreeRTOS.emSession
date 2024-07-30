@@ -9,40 +9,33 @@
  <Memory3/>
  <Memory4/>
  <Project>
-  <ProjectSessionItem path="DWM3001CDK-DW3_QM33_SDK_CLI-FreeRTOS"/>
-  <ProjectSessionItem path="DWM3001CDK-DW3_QM33_SDK_CLI-FreeRTOS;DWM3001CDK-DW3_QM33_SDK_CLI-FreeRTOS"/>
-  <ProjectSessionItem path="DWM3001CDK-DW3_QM33_SDK_CLI-FreeRTOS;DWM3001CDK-DW3_QM33_SDK_CLI-FreeRTOS;Libs"/>
-  <ProjectSessionItem path="DWM3001CDK-DW3_QM33_SDK_CLI-FreeRTOS;DWM3001CDK-DW3_QM33_SDK_CLI-FreeRTOS;Libs;dwt_uwb_driver"/>
-  <ProjectSessionItem path="DWM3001CDK-DW3_QM33_SDK_CLI-FreeRTOS;DWM3001CDK-DW3_QM33_SDK_CLI-FreeRTOS;Libs;uwbstack"/>
-  <ProjectSessionItem path="DWM3001CDK-DW3_QM33_SDK_CLI-FreeRTOS;DWM3001CDK-DW3_QM33_SDK_CLI-FreeRTOS;Libs;uwbstack;uwbstack_lib"/>
-  <ProjectSessionItem path="DWM3001CDK-DW3_QM33_SDK_CLI-FreeRTOS;DWM3001CDK-DW3_QM33_SDK_CLI-FreeRTOS;Libs;uwbstack;uwbstack_lib;lib"/>
-  <ProjectSessionItem path="DWM3001CDK-DW3_QM33_SDK_CLI-FreeRTOS;DWM3001CDK-DW3_QM33_SDK_CLI-FreeRTOS;Libs;uwbstack;uwbstack_lib;lib;cmsis_v1"/>
-  <ProjectSessionItem path="DWM3001CDK-DW3_QM33_SDK_CLI-FreeRTOS;DWM3001CDK-DW3_QM33_SDK_CLI-FreeRTOS;Projects"/>
-  <ProjectSessionItem path="DWM3001CDK-DW3_QM33_SDK_CLI-FreeRTOS;DWM3001CDK-DW3_QM33_SDK_CLI-FreeRTOS;Projects;DW3_QM33_SDK"/>
-  <ProjectSessionItem path="DWM3001CDK-DW3_QM33_SDK_CLI-FreeRTOS;DWM3001CDK-DW3_QM33_SDK_CLI-FreeRTOS;Projects;DW3_QM33_SDK;FreeRTOS"/>
-  <ProjectSessionItem path="DWM3001CDK-DW3_QM33_SDK_CLI-FreeRTOS;DWM3001CDK-DW3_QM33_SDK_CLI-FreeRTOS;Projects;DW3_QM33_SDK;FreeRTOS;DW3_QM33_SDK-FreeRTOS-Common"/>
-  <ProjectSessionItem path="DWM3001CDK-DW3_QM33_SDK_CLI-FreeRTOS;DWM3001CDK-DW3_QM33_SDK_CLI-FreeRTOS;Projects;DW3_QM33_SDK;FreeRTOS;DWM3001CDK"/>
-  <ProjectSessionItem path="DWM3001CDK-DW3_QM33_SDK_CLI-FreeRTOS;DWM3001CDK-DW3_QM33_SDK_CLI-FreeRTOS;Src"/>
-  <ProjectSessionItem path="DWM3001CDK-DW3_QM33_SDK_CLI-FreeRTOS;DWM3001CDK-DW3_QM33_SDK_CLI-FreeRTOS;Src;AppConfig"/>
-  <ProjectSessionItem path="DWM3001CDK-DW3_QM33_SDK_CLI-FreeRTOS;DWM3001CDK-DW3_QM33_SDK_CLI-FreeRTOS;Src;AppConfig;DWM3001CDK"/>
-  <ProjectSessionItem path="DWM3001CDK-DW3_QM33_SDK_CLI-FreeRTOS;DWM3001CDK-DW3_QM33_SDK_CLI-FreeRTOS;Src;Apps"/>
-  <ProjectSessionItem path="DWM3001CDK-DW3_QM33_SDK_CLI-FreeRTOS;DWM3001CDK-DW3_QM33_SDK_CLI-FreeRTOS;Src;Apps;Src"/>
-  <ProjectSessionItem path="DWM3001CDK-DW3_QM33_SDK_CLI-FreeRTOS;DWM3001CDK-DW3_QM33_SDK_CLI-FreeRTOS;Src;Apps;Src;fira"/>
-  <ProjectSessionItem path="DWM3001CDK-DW3_QM33_SDK_CLI-FreeRTOS;DWM3001CDK-DW3_QM33_SDK_CLI-FreeRTOS;Src;Apps;Src;listener2"/>
-  <ProjectSessionItem path="DWM3001CDK-DW3_QM33_SDK_CLI-FreeRTOS;DWM3001CDK-DW3_QM33_SDK_CLI-FreeRTOS;Src;Apps;Src;tcfm_tcwm"/>
-  <ProjectSessionItem path="DWM3001CDK-DW3_QM33_SDK_CLI-FreeRTOS;DWM3001CDK-DW3_QM33_SDK_CLI-FreeRTOS;Src;Apps;Src;tcfm_tcwm;FreeRTOS"/>
-  <ProjectSessionItem path="DWM3001CDK-DW3_QM33_SDK_CLI-FreeRTOS;DWM3001CDK-DW3_QM33_SDK_CLI-FreeRTOS;Src;Boards"/>
-  <ProjectSessionItem path="DWM3001CDK-DW3_QM33_SDK_CLI-FreeRTOS;DWM3001CDK-DW3_QM33_SDK_CLI-FreeRTOS;Src;Boards;Src"/>
-  <ProjectSessionItem path="DWM3001CDK-DW3_QM33_SDK_CLI-FreeRTOS;DWM3001CDK-DW3_QM33_SDK_CLI-FreeRTOS;Src;Boards;Src;DWM3001CDK"/>
-  <ProjectSessionItem path="DWM3001CDK-DW3_QM33_SDK_CLI-FreeRTOS;DWM3001CDK-DW3_QM33_SDK_CLI-FreeRTOS;Src;Boards;Src;DWM3001CDK;FreeRTOS"/>
-  <ProjectSessionItem path="DWM3001CDK-DW3_QM33_SDK_CLI-FreeRTOS;DWM3001CDK-DW3_QM33_SDK_CLI-FreeRTOS;Src;Comm"/>
-  <ProjectSessionItem path="DWM3001CDK-DW3_QM33_SDK_CLI-FreeRTOS;DWM3001CDK-DW3_QM33_SDK_CLI-FreeRTOS;Src;EventManager"/>
-  <ProjectSessionItem path="DWM3001CDK-DW3_QM33_SDK_CLI-FreeRTOS;DWM3001CDK-DW3_QM33_SDK_CLI-FreeRTOS;Src;HAL"/>
-  <ProjectSessionItem path="DWM3001CDK-DW3_QM33_SDK_CLI-FreeRTOS;DWM3001CDK-DW3_QM33_SDK_CLI-FreeRTOS;Src;HAL;Src"/>
-  <ProjectSessionItem path="DWM3001CDK-DW3_QM33_SDK_CLI-FreeRTOS;DWM3001CDK-DW3_QM33_SDK_CLI-FreeRTOS;Src;OSAL"/>
-  <ProjectSessionItem path="DWM3001CDK-DW3_QM33_SDK_CLI-FreeRTOS;DWM3001CDK-DW3_QM33_SDK_CLI-FreeRTOS;Src;OSAL;Src"/>
-  <ProjectSessionItem path="DWM3001CDK-DW3_QM33_SDK_CLI-FreeRTOS;DWM3001CDK-DW3_QM33_SDK_CLI-FreeRTOS;Src;SecureComponent"/>
-  <ProjectSessionItem path="DWM3001CDK-DW3_QM33_SDK_CLI-FreeRTOS;DWM3001CDK-DW3_QM33_SDK_CLI-FreeRTOS;Src;SecureComponent;Crypto"/>
+  <ProjectSessionItem path="UWB-CIR-Localization_RX"/>
+  <ProjectSessionItem path="UWB-CIR-Localization_RX;UWB-CIR-Localization_RX"/>
+  <ProjectSessionItem path="UWB-CIR-Localization_RX;UWB-CIR-Localization_RX;Libs"/>
+  <ProjectSessionItem path="UWB-CIR-Localization_RX;UWB-CIR-Localization_RX;Libs;dwt_uwb_driver"/>
+  <ProjectSessionItem path="UWB-CIR-Localization_RX;UWB-CIR-Localization_RX;Libs;dwt_uwb_driver;lib"/>
+  <ProjectSessionItem path="UWB-CIR-Localization_RX;UWB-CIR-Localization_RX;Projects"/>
+  <ProjectSessionItem path="UWB-CIR-Localization_RX;UWB-CIR-Localization_RX;Projects;DW3_QM33_SDK"/>
+  <ProjectSessionItem path="UWB-CIR-Localization_RX;UWB-CIR-Localization_RX;Projects;DW3_QM33_SDK;FreeRTOS"/>
+  <ProjectSessionItem path="UWB-CIR-Localization_RX;UWB-CIR-Localization_RX;Projects;DW3_QM33_SDK;FreeRTOS;DW3_QM33_SDK-FreeRTOS-Common"/>
+  <ProjectSessionItem path="UWB-CIR-Localization_RX;UWB-CIR-Localization_RX;Src"/>
+  <ProjectSessionItem path="UWB-CIR-Localization_RX;UWB-CIR-Localization_RX;Src;Apps"/>
+  <ProjectSessionItem path="UWB-CIR-Localization_RX;UWB-CIR-Localization_RX;Src;Apps;Src"/>
+  <ProjectSessionItem path="UWB-CIR-Localization_RX;UWB-CIR-Localization_RX;Src;Apps;Src;common"/>
+  <ProjectSessionItem path="UWB-CIR-Localization_RX;UWB-CIR-Localization_RX;Src;Apps;Src;common;flushTask"/>
+  <ProjectSessionItem path="UWB-CIR-Localization_RX;UWB-CIR-Localization_RX;Src;Apps;Src;common;usb_uart"/>
+  <ProjectSessionItem path="UWB-CIR-Localization_RX;UWB-CIR-Localization_RX;Src;Apps;Src;fira"/>
+  <ProjectSessionItem path="UWB-CIR-Localization_RX;UWB-CIR-Localization_RX;Src;Apps;Src;fira;FreeRTOS"/>
+  <ProjectSessionItem path="UWB-CIR-Localization_RX;UWB-CIR-Localization_RX;Src;Apps;Src;listener2"/>
+  <ProjectSessionItem path="UWB-CIR-Localization_RX;UWB-CIR-Localization_RX;Src;Apps;Src;reporter"/>
+  <ProjectSessionItem path="UWB-CIR-Localization_RX;UWB-CIR-Localization_RX;Src;Apps;Src;reporter;usb_reporter"/>
+  <ProjectSessionItem path="UWB-CIR-Localization_RX;UWB-CIR-Localization_RX;Src;Apps;Src;RX_CIR"/>
+  <ProjectSessionItem path="UWB-CIR-Localization_RX;UWB-CIR-Localization_RX;Src;HAL"/>
+  <ProjectSessionItem path="UWB-CIR-Localization_RX;UWB-CIR-Localization_RX;Src;HAL;Src"/>
+  <ProjectSessionItem path="UWB-CIR-Localization_RX;UWB-CIR-Localization_RX;Src;OSAL"/>
+  <ProjectSessionItem path="UWB-CIR-Localization_RX;UWB-CIR-Localization_RX;Src;OSAL;Src"/>
+  <ProjectSessionItem path="UWB-CIR-Localization_RX;UWB-CIR-Localization_RX;Src;OSAL;Src;FreeRTOS"/>
+  <ProjectSessionItem path="UWB-CIR-Localization_RX;UWB-CIR-Localization_RX;Src;UWB"/>
  </Project>
  <Register1/>
  <Register2/>
@@ -67,17 +60,22 @@
   <Watches active="0" update="Never"/>
  </Watch4>
  <Files>
-  <SessionOpenFile windowGroup="DockEditLeft" x="37" y="381" useTextEdit="1" path="../../../../../Src/Apps/Src/fira/fira_app.c" left="0" top="381" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="58" useTextEdit="1" path="../../../../../Src/UWB/dw3000_lp_mcu.c" left="0" top="36" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="30" y="136" useTextEdit="1" path="../../../../../Src/Apps/Src/listener2/listener2_dw3000.c" left="0" top="112" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="85" useTextEdit="1" path="../../DW3_QM33_SDK-FreeRTOS-Common/main.c" left="0" selected="1" top="48" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="27" y="282" useTextEdit="1" path="../../../../../Src/Apps/Src/common/cmd/cmd_fn.c" left="19" top="245" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="23" y="447" useTextEdit="1" path="../../../../../Src/HAL/Src/nrfx/HAL_DW3000.c" left="0" top="418" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="51" y="16" useTextEdit="1" path="../../../../../Src/HAL/Inc/HAL_uwb.h" left="0" top="0" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" path="../../../../../Src/Apps/Src/listener2/task_listener2.c" left="0" top="47" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" path="../../../../../Src/Apps/Src/common/usb_uart/usb_uart_tx.c" left="0" top="241" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="18" y="253" useTextEdit="1" path="../../../../../Src/Apps/Src/common/usb_uart/usb_uart_rx.c" left="0" top="218" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="26" y="337" useTextEdit="1" path="../../../../../Src/Apps/Src/listener2/listener2.c" left="0" top="305" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="72" y="222" useTextEdit="1" path="../../../../../Src/Apps/Src/fira/fira_app.c" left="0" top="209" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="15" y="76" useTextEdit="1" path="../../DW3_QM33_SDK-FreeRTOS-Common/main.c" left="0" top="45" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="26" y="337" useTextEdit="1" path="../../../../../Src/Apps/Src/listener2/listener2.c" left="0" top="296" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="28" useTextEdit="1" path="rx_diagnostics.c" left="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="29" y="77" useTextEdit="1" path="../../../../../Src/Apps/Src/fira/fira_dw3000.c" left="0" top="77" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="34" y="325" useTextEdit="1" path="../../../../../Src/Apps/Src/fira/common_fira.c" left="0" top="325" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="2" y="140" useTextEdit="1" path="../../../../../Src/Helpers/Inc/deca_error.h" left="0" top="103" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" path="../../../../../Src/Apps/Src/common/app/common/app.c" left="0" top="44" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" path="../../../../../Src/Apps/Src/common/app/common/app.h" left="0" top="35" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="7" y="142" useTextEdit="1" path="../../../../../Src/Apps/Src/fira/common_fira.h" left="0" top="103" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="30" y="792" useTextEdit="1" path="../../../../../Libs/dwt_uwb_driver/Inc/deca_device_api.h" left="0" top="753" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="46" y="141" useTextEdit="1" path="../../../../../Src/Apps/Src/listener2/listener2_dw3000.c" left="0" top="102" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="3" y="531" useTextEdit="1" path="../../../../../Src/OSAL/Src/FreeRTOS/cmsis_os.c" left="0" top="510" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="54" y="580" useTextEdit="1" path="../../../../../Libs/uwbstack/uwbstack_lib/include/uwbmac/uwbmac.h" left="0" top="435" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="15" y="162" useTextEdit="1" path="../../../../../Src/UWB/dw3000_statistics.c" left="0" top="13" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="60" y="323" useTextEdit="1" path="../../../../../Src/UWB/dw3000_mcps_mcu.c" left="0" selected="1" top="308" codecName="Default"/>
  </Files>
- <EMStudioWindow activeProject="DWM3001CDK-DW3_QM33_SDK_CLI-FreeRTOS" fileDialogDefaultFilter="*.c" autoConnectTarget="J-Link" buildConfiguration="Common" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="/Users/kailaicui/Downloads/DWM3001CDK DK Software, Sources, Tools and Developer Guide/DWM3001CDK DK/DWM3001CDK_SDK/Sources/DWM3001CDK-DW3_QM33_SDK-FreeRTOS_0_1_1/DWM3001CDK-DW3_QM33_SDK-FreeRTOS/Projects/DW3_QM33_SDK/FreeRTOS/DWM3001CDK" debugSearchPath="" autoConnectCapabilities="3199"/>
+ <EMStudioWindow activeProject="UWB-CIR-Localization_RX" fileDialogDefaultFilter="*.c" autoConnectTarget="J-Link" buildConfiguration="Common" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="/Users/kailaicui/Downloads/DWM3001CDK DK Software, Sources, Tools and Developer Guide/DWM3001CDK DK/DWM3001CDK_SDK/Sources/DWM3001CDK-DW3_QM33_SDK-FreeRTOS_0_1_1/DWM3001CDK-DW3_QM33_SDK-FreeRTOS/Projects/DW3_QM33_SDK/FreeRTOS/DWM3001CDK" debugSearchPath="" autoConnectCapabilities="3711"/>
 </session>

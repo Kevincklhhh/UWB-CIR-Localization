@@ -74,7 +74,9 @@
 #include "create_fira_app_task.h"
 
 extern void pdoaupdate_lut(void);
-
+#define ACCUM_DATA_LEN (3 * 2 * (3 + 3) + 1)
+char buffer[1024];  // Adjust size as needed to fit the diagnostics data
+int len;
 #define DATA_TASK_STACK_SIZE_BYTES 1400
 
 /* 0 - no output of PDoA
@@ -219,7 +221,10 @@ static float convert_aoa_2pi_q16_to_deg(int16_t aoa_2pi_q16)
 }
 
 static void report_cb(const struct ranging_results *results, void *user_data)
-{
+{   
+        
+    
+
     int len = 0;
     uint32_t seq = 0;
     struct string_measurement *str_result = (struct string_measurement *)user_data;
@@ -302,12 +307,7 @@ static void report_cb(const struct ranging_results *results, void *user_data)
     {
         len = fira_uwb_add_diag(str_result->str, len, str_result->len);
     }
-    len += snprintf(&str_result->str[len], str_result->len - len, "test");
-    //frame_len = dwt_getframelength();
-    //        if (frame_len <= FRAME_LEN_MAX)
-    //        {
-    //            dwt_readrxdata(rx_buffer, frame_len, 0);
-    //        }
+    len += snprintf(&str_result->str[len], str_result->len - len, "]");
 
     len += snprintf(&str_result->str[len], str_result->len - len, "}\r\n");
     reporter_instance.print((char *)str_result->str, len);
@@ -325,6 +325,26 @@ static void data_task(void const *arg)
         {
             break;
         }
+
+        int len = 0;
+        dwt_rxdiag_t rx_diag;
+        uint8_t accum_data[ACCUM_DATA_LEN];
+
+        dwt_readdiagnostics(&rx_diag);
+        uint16_t fp_int = rx_diag.ipatovFpIndex >> 6;
+        dwt_readaccdata(accum_data, ACCUM_DATA_LEN, (fp_int - 2));
+
+        // Format diagnostics data into buffer
+        len = sprintf(buffer, "First Path Index: %u\n", rx_diag.ipatovFpIndex);
+        len += sprintf(buffer + len, "Accumulator Data:\n");
+        for (int i = 0; i < ACCUM_DATA_LEN; i++) {
+            len += sprintf(buffer + len, "%02X ", accum_data[i]);
+        }
+        len += sprintf(buffer + len, "\n");
+
+        // Print diagnostics data
+        reporter_instance.print(buffer, len);
+
         fira_helper_send_data(&fira_ctx, session_id, &data_params);
     };
     dataTransferTask.Exit = 2;
