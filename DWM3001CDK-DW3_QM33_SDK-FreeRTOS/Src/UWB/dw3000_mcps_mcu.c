@@ -219,6 +219,14 @@ bool readDW3000CIRData(int32_t *realvalues, int32_t *imgvalues ,int len, int off
 }
 
 
+void printDIAG() {
+  dwt_configciadiag(1);
+  dwt_rxdiag_t rx_diag;
+  dwt_readdiagnostics(&rx_diag);
+  char tmp[16];
+  int len = sprintf(tmp, "Ipatov FpIndex: %08X\n", rx_diag.ipatovFpIndex);
+  reporter_instance.print(tmp, len);
+}
 void printCIR() {
     int CIR_length = 100; // Number of complex CIR samples we want to read
    
@@ -252,25 +260,25 @@ void printCIR() {
     }
 */
   
-char tmp[16];
+  char tmp[16];
   int len;
-  reporter_instance.print("\nCIR_real_values = [", 20);
+  reporter_instance.print("\nCIR_real_values=[ ", 20);
   len = snprintf(tmp,16, "%ld", (realSample[0])); 
   reporter_instance.print(tmp, len); 
   for (int i = 1; i < CIR_length; i++) {
      len = snprintf(tmp,16, " %ld", (realSample[i])); 
      reporter_instance.print(tmp, len); 
   }
-  reporter_instance.print("]\n", 2); 
+  reporter_instance.print(" ]\n", 2); 
 
-  reporter_instance.print("\nCIR_imag_values = [", 20);
+  reporter_instance.print("\nCIR_imag_values=[ ", 20);
   len = snprintf(tmp,16, "%ld", (imagSample[0])); 
   reporter_instance.print(tmp, len); 
   for (int i = 1; i < CIR_length; i++) {
      len = snprintf(tmp,16, " %ld", (imagSample[i])); 
      reporter_instance.print(tmp, len); 
   }
-  reporter_instance.print("]\n", 2);
+  reporter_instance.print(" ]\n", 2);
  
 
 
@@ -322,7 +330,9 @@ static void mcps_rx_cb(const dwt_cb_data_t *rxd)
         /*Below Xtal trimming can be executed in the upper layer: rx[idx].cfo*/
         int cfo_ppm = (int)((float)cfo * (CLOCK_OFFSET_PPM_TO_RATIO * 1e6 * 100));
         dw->mcps_runtime->diag.cfo_ppm = cfo_ppm;
+        printDIAG();
         printCIR();
+       
     }
     else
     {
